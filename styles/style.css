@@ -10792,6 +10792,7 @@ html {
   font-weight: 900;
   color: #ec5242;
   font-size: 5rem;
+  line-height: 5rem;
 }
 .homeIntro p {
   font-family: "Lato", sans-serif;
@@ -10877,6 +10878,159 @@ html {
   font-size: 2rem;
   padding: 2rem 4rem;
   border-radius: 0%;
+}
+
+.aboutIntro {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 3rem;
+}
+.aboutIntro h3, .aboutIntro .h3 {
+  padding-top: 3rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  color: #ec5242;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.aboutIntro h2, .aboutIntro .h2 {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  color: #ec5242;
+  font-size: 5rem;
+  text-align: center;
+  line-height: 5rem;
+  margin-bottom: 3rem;
+}
+.aboutIntro p {
+  font-family: "Lato", sans-serif;
+  color: #272a31;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 2.5rem;
+  text-align: center;
+}
+.aboutIntro p span {
+  text-decoration: underline;
+  font-weight: bold;
+}
+.aboutIntro .border {
+  margin-bottom: 2rem;
+  background-color: white;
+  padding: 1.5rem;
+}
+
+.creative {
+  display: flex;
+  flex-direction: column;
+}
+.creative h3, .creative .h3 {
+  padding-top: 3rem;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  color: #272a31;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+.creative .separator {
+  width: 3rem;
+  border-top: 0.2rem solid #ec5242;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.5rem;
+}
+.creative p {
+  font-family: "Lato", sans-serif;
+  color: #272a31;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  text-align: center;
+}
+.creative .logo {
+  width: 90%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  background-color: rebeccapurple;
+}
+
+.summit {
+  display: flex;
+  flex-direction: column;
+  border-top: 0.2rem solid #d3d3d3;
+}
+.summit h3, .summit .h3 {
+  padding-top: 3rem;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  color: #272a31;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+.summit .separator {
+  width: 3rem;
+  border-top: 0.2rem solid #ec5242;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.5rem;
+}
+.summit p {
+  font-family: "Lato", sans-serif;
+  color: #272a31;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  text-align: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.summit .past1 {
+  width: 85%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  background-color: rgb(207, 71, 207);
+}
+.summit .past2 {
+  width: 85%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  background-color: rgb(71, 153, 51);
+}
+
+.partner {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+.partner h3, .partner .h3 {
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  color: white;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+.partner .separator {
+  width: 3rem;
+  border-top: 0.2rem solid #ec5242;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */
