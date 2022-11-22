@@ -8,46 +8,33 @@
     <link rel="stylesheet" href="./styles/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,700&display=swap"
         rel="stylesheet">
+    <script src="./scripts/hamburger.js" defer></script>
     <script src="./bootstrap/dist/js/bootstrap.js" defer></script>
     <title>NFT Gallery</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-md bg-light">
-        <div class="container-md">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="navbar-brand" href="#">LOGO</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled">Program</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled">Join</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled">Sponsored</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled">News</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled">CC Campaign</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <section class="homePage">
+    <header class="header bg-light">
+        <ul class="toolbar">
+            <li class="toolbarDesktop">
+                <img src="" alt="Logo">
+            </li>
+            <li class="toolbarDesktop pushright">Portfolio</li>
+            <li class="toolbarDesktop">About</li>
+            <li class="toolbarDesktop">Contact</li>
+            <li class="toolbarMobile mobileIconmenu">
+                <nav>
+                    <img id="hamburgerIcon" src="./icons/hamburger.png" alt="iconMenu">
+                    <div id="hamburgerDropdownContent" class="noShow">
+                        <a href="#"><img src="./icons/close.png" alt="Close hamburger"></a>
+                        <a href="#home">Home</a>
+                        <a href="#about">About</a>
+                    </div>
+                </nav>
+            </li>
+        </ul>
+    </header>
+    <section class="homePage" id="home">
         <div class="container-md bg-light homeIntro">
             <h2>"Welcome to NFT exhibition"</h2>
             <h1>NFT website Gallery</h1>
@@ -94,7 +81,7 @@
             <h2>"Featured Speakers"</h2>
         </div>
     </section>
-    <section class="aboutPage">
+    <section class="aboutPage" id="about">
         <div class="container-md bg-light aboutIntro">
             <h3>"Welcome to NFT exhibition"</h3>
             <h2>NFT website Gallery</h2>
