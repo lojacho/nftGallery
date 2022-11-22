@@ -10776,12 +10776,9 @@ html {
 }
 
 .header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
   padding-top: 2rem;
   padding-left: 1rem;
+  margin-bottom: -2rem;
 }
 .header .toolbar {
   list-style: none;
@@ -10795,7 +10792,7 @@ html {
 
 .show {
   display: flex !important;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
@@ -10928,6 +10925,7 @@ html {
   padding-left: 2rem;
   padding-right: 2rem;
   padding-bottom: 3rem;
+  padding-top: 3rem;
 }
 .aboutIntro h3, .aboutIntro .h3 {
   padding-top: 3rem;
