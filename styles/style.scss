@@ -22,11 +22,14 @@ html {
     right: 0;
     padding-top: 2rem;
     padding-left: 1rem;
+
     .toolbar {
         list-style: none;
+
         .toolbarDesktop {
             display: none;
         }
+
         .toolbarMobile {
             .noShow {
                 display: none;
@@ -37,7 +40,7 @@ html {
 
 .show {
     display: flex !important;
-    position:fixed;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -45,6 +48,7 @@ html {
     flex-direction: column;
     background-color: rgb(248, 249, 250);
     box-shadow: 0 4.8rem 4.8rem rgba(37, 47, 137, 0.08);
+
     a {
         color: $red-brand;
         padding: 1.2rem 1.6rem;
@@ -268,7 +272,16 @@ html {
         margin-right: auto;
         margin-top: 2rem;
         margin-bottom: 3rem;
-        background-color: rebeccapurple;
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+        border: 0.1rem solid $gray-brand;
+        display: flex;
+        justify-content: center;
+
+        img {
+            width: 60%;
+            height: auto;
+        }
     }
 }
 
@@ -313,8 +326,12 @@ html {
         margin-left: auto;
         margin-right: auto;
         margin-top: 2rem;
-        margin-bottom: 3rem;
-        background-color: rgb(207, 71, 207);
+        margin-bottom: 1rem;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
     }
 
     .past2 {
@@ -322,9 +339,13 @@ html {
         height: auto;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 2rem;
+        margin-top: 1rem;
         margin-bottom: 3rem;
-        background-color: rgb(71, 153, 51);
+
+        img {
+            width: 100%;
+            height: auto;
+        }
     }
 }
 
@@ -349,5 +370,33 @@ html {
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 1.5rem;
+    }
+
+    .row {
+        .col {
+            img {
+                width: 100%;
+                height: 80%;
+            }
+        }
+    }
+}
+
+.footeres {
+    padding:3rem;
+    .row {
+        .col {
+            img{
+                width: 80%;
+                height: auto;
+            }
+            p {
+                font-family: 'Lato', sans-serif;
+                color: $black-brand;
+                font-weight: 400;
+                font-size: 1rem;
+                line-height: 1.5rem;  
+            }
+        }
     }
 }
