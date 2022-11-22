@@ -10775,6 +10775,10 @@ html {
   font-size: 62.5%;
 }
 
+.mediaDesktop {
+  display: none;
+}
+
 .header {
   padding-top: 2rem;
   padding-left: 1rem;
@@ -11189,6 +11193,71 @@ html {
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .mediaDesktop {
+    display: flex;
+    padding: 0.5rem 8rem;
+  }
+  .mediaDesktop ul {
+    list-style: none;
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
+    align-items: center;
+    margin-bottom: 0;
+  }
+  .mediaDesktop ul li {
+    font-family: "Lato", sans-serif;
+    color: white;
+    font-weight: 400;
+    font-size: 1rem;
+  }
+  .mediaDesktop ul li img {
+    width: 1rem;
+    height: auto;
+  }
+  .header {
+    padding-left: 8rem;
+    padding-right: 8rem;
+    background-color: white !important;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .header .toolbar {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+  }
+  .header .toolbar .toolbarDesktop {
+    display: flex;
+    color: #272a31;
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.3rem;
+  }
+  .header .toolbar .toolbarDesktop img {
+    padding-bottom: 1rem;
+    width: 10rem;
+    height: auto;
+  }
+  .header .toolbar .pushright {
+    margin-left: auto;
+  }
+  .header .toolbar .pushright a {
+    color: #ec5242;
+    text-decoration: none;
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.3rem;
+  }
+  .header .toolbar .toolbarMobile {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
