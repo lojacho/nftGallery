@@ -2,7 +2,9 @@
   // scss-docs-start pagination-css-vars
   --#{$prefix}pagination-padding-x: #{$pagination-padding-x};
   --#{$prefix}pagination-padding-y: #{$pagination-padding-y};
+
   @include rfs($pagination-font-size, --#{$prefix}pagination-font-size);
+
   --#{$prefix}pagination-color: #{$pagination-color};
   --#{$prefix}pagination-bg: #{$pagination-bg};
   --#{$prefix}pagination-border-width: #{$pagination-border-width};
@@ -23,6 +25,7 @@
   // scss-docs-end pagination-css-vars
 
   display: flex;
+
   @include list-unstyled();
 }
 
@@ -30,11 +33,14 @@
   position: relative;
   display: block;
   padding: var(--#{$prefix}pagination-padding-y) var(--#{$prefix}pagination-padding-x);
+
   @include font-size(var(--#{$prefix}pagination-font-size));
+
   color: var(--#{$prefix}pagination-color);
   text-decoration: if($link-decoration == none, null, none);
   background-color: var(--#{$prefix}pagination-bg);
   border: var(--#{$prefix}pagination-border-width) solid var(--#{$prefix}pagination-border-color);
+
   @include transition($pagination-transition);
 
   &:hover {
@@ -57,7 +63,9 @@
   .active > & {
     z-index: 3;
     color: var(--#{$prefix}pagination-active-color);
+
     @include gradient-bg(var(--#{$prefix}pagination-active-bg));
+
     border-color: var(--#{$prefix}pagination-active-border-color);
   }
 
@@ -87,14 +95,15 @@
         @include border-end-radius(var(--#{$prefix}pagination-border-radius));
       }
     }
-  } @else {
+  }
+
+  @else {
     // Add border-radius to all pageLinks in case they have left margin
     .page-link {
       @include border-radius(var(--#{$prefix}pagination-border-radius));
     }
   }
 }
-
 
 //
 // Sizing

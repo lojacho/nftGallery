@@ -7,7 +7,9 @@
   width: 100%;
   padding: $input-padding-y $input-padding-x;
   font-family: $input-font-family;
+
   @include font-size($input-font-size);
+
   font-weight: $input-font-weight;
   line-height: $input-line-height;
   color: $input-color;
@@ -18,7 +20,6 @@
 
   // Note: This has no effect on <select>s in some browsers, due to the limited stylability of `<select>`s in CSS.
   @include border-radius($input-border-radius, 0);
-
   @include box-shadow($input-box-shadow);
   @include transition($input-transition);
 
@@ -36,9 +37,12 @@
     background-color: $input-focus-bg;
     border-color: $input-focus-border-color;
     outline: 0;
+
     @if $enable-shadows {
       @include box-shadow($input-box-shadow, $input-focus-box-shadow);
-    } @else {
+    }
+
+    @else {
       // Avoid using mixin so we can pass custom focus shadow properly
       box-shadow: $input-focus-box-shadow;
     }
@@ -78,13 +82,16 @@
     margin: (-$input-padding-y) (-$input-padding-x);
     margin-inline-end: $input-padding-x;
     color: $form-file-button-color;
+
     @include gradient-bg($form-file-button-bg);
+
     pointer-events: none;
     border-color: inherit;
     border-style: solid;
     border-width: 0;
     border-inline-end-width: $input-border-width;
     border-radius: 0; // stylelint-disable-line property-disallowed-list
+
     @include transition($btn-transition);
   }
 
@@ -130,6 +137,7 @@
 .form-control-sm {
   min-height: $input-height-sm;
   padding: $input-padding-y-sm $input-padding-x-sm;
+
   @include font-size($input-font-size-sm);
   @include border-radius($input-border-radius-sm);
 
@@ -143,6 +151,7 @@
 .form-control-lg {
   min-height: $input-height-lg;
   padding: $input-padding-y-lg $input-padding-x-lg;
+
   @include font-size($input-font-size-lg);
   @include border-radius($input-border-radius-lg);
 
@@ -182,6 +191,7 @@ textarea {
 
   &::-moz-color-swatch {
     border: 0 !important; // stylelint-disable-line declaration-no-important
+
     @include border-radius($input-border-radius);
   }
 

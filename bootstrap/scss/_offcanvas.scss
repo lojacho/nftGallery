@@ -41,6 +41,7 @@
       background-color: var(--#{$prefix}offcanvas-bg);
       background-clip: padding-box;
       outline: 0;
+
       @include box-shadow(var(--#{$prefix}offcanvas-box-shadow));
       @include transition(transform $offcanvas-transition-duration ease-in-out);
 
@@ -95,6 +96,7 @@
       @include media-breakpoint-up($next) {
         --#{$prefix}offcanvas-height: auto;
         --#{$prefix}offcanvas-border-width: 0;
+
         background-color: transparent !important; // stylelint-disable-line declaration-no-important
 
         .offcanvas-header {
@@ -125,10 +127,10 @@
   padding: var(--#{$prefix}offcanvas-padding-y) var(--#{$prefix}offcanvas-padding-x);
 
   .btn-close {
-    padding: calc(var(--#{$prefix}offcanvas-padding-y) * .5) calc(var(--#{$prefix}offcanvas-padding-x) * .5);
-    margin-top: calc(-.5 * var(--#{$prefix}offcanvas-padding-y));
-    margin-right: calc(-.5 * var(--#{$prefix}offcanvas-padding-x));
-    margin-bottom: calc(-.5 * var(--#{$prefix}offcanvas-padding-y));
+    padding: calc(var(--#{$prefix}offcanvas-padding-y) * 0.5) calc(var(--#{$prefix}offcanvas-padding-x) * 0.5);
+    margin-top: calc(-0.5 * var(--#{$prefix}offcanvas-padding-y));
+    margin-right: calc(-0.5 * var(--#{$prefix}offcanvas-padding-x));
+    margin-bottom: calc(-0.5 * var(--#{$prefix}offcanvas-padding-y));
   }
 }
 

@@ -8,7 +8,9 @@
     #{if(&, "&", "")}.is-#{$state} {
       @content;
     }
-  } @else {
+  }
+
+  @else {
     #{if(&, "&", "")}.is-#{$state} {
       @content;
     }
@@ -27,7 +29,9 @@
     display: none;
     width: 100%;
     margin-top: $form-feedback-margin-top;
+
     @include font-size($form-feedback-font-size);
+
     font-style: $form-feedback-font-style;
     color: $color;
   }
@@ -39,11 +43,14 @@
     display: none;
     max-width: 100%; // Contain to parent when possible
     padding: $form-feedback-tooltip-padding-y $form-feedback-tooltip-padding-x;
-    margin-top: .1rem;
+    margin-top: 0.1rem;
+
     @include font-size($form-feedback-tooltip-font-size);
+
     line-height: $form-feedback-tooltip-line-height;
     color: $tooltip-color;
     background-color: $tooltip-bg-color;
+
     @include border-radius($form-feedback-tooltip-border-radius);
   }
 
@@ -129,9 +136,10 @@
       }
     }
   }
+
   .form-check-inline .form-check-input {
     ~ .#{$state}-feedback {
-      margin-left: .5em;
+      margin-left: 0.5em;
     }
   }
 
@@ -142,7 +150,9 @@
       @include form-validation-state-selector($state) {
         @if $state == "valid" {
           z-index: 3;
-        } @else if $state == "invalid" {
+        }
+
+        @else if $state == "invalid" {
           z-index: 4;
         }
       }

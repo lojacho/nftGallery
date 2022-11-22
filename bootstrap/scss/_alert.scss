@@ -20,6 +20,7 @@
   color: var(--#{$prefix}alert-color);
   background-color: var(--#{$prefix}alert-bg);
   border: var(--#{$prefix}alert-border);
+
   @include border-radius(var(--#{$prefix}alert-border-radius));
 }
 
@@ -33,7 +34,6 @@
 .alert-link {
   font-weight: $alert-link-font-weight;
 }
-
 
 // Dismissible alerts
 //
@@ -51,7 +51,6 @@
     padding: $alert-padding-y * 1.25 $alert-padding-x;
   }
 }
-
 
 // scss-docs-start alert-modifiers
 // Generate contextual modifier classes for colorizing the alert.

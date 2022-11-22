@@ -23,7 +23,9 @@
   --#{$prefix}dropdown-padding-x: #{$dropdown-padding-x};
   --#{$prefix}dropdown-padding-y: #{$dropdown-padding-y};
   --#{$prefix}dropdown-spacer: #{$dropdown-spacer};
+
   @include rfs($dropdown-font-size, --#{$prefix}dropdown-font-size);
+
   --#{$prefix}dropdown-color: #{$dropdown-color};
   --#{$prefix}dropdown-bg: #{$dropdown-bg};
   --#{$prefix}dropdown-border-color: #{$dropdown-border-color};
@@ -52,13 +54,16 @@
   min-width: var(--#{$prefix}dropdown-min-width);
   padding: var(--#{$prefix}dropdown-padding-y) var(--#{$prefix}dropdown-padding-x);
   margin: 0; // Override default margin of ul
+
   @include font-size(var(--#{$prefix}dropdown-font-size));
+
   color: var(--#{$prefix}dropdown-color);
   text-align: left; // Ensures proper alignment if parent has it changed (e.g., modal footer)
   list-style: none;
   background-color: var(--#{$prefix}dropdown-bg);
   background-clip: padding-box;
   border: var(--#{$prefix}dropdown-border-width) solid var(--#{$prefix}dropdown-border-color);
+
   @include border-radius(var(--#{$prefix}dropdown-border-radius));
   @include box-shadow(var(--#{$prefix}dropdown-box-shadow));
 
@@ -73,11 +78,11 @@
     > li:first-child .dropdown-item {
       @include border-top-radius(var(--#{$prefix}dropdown-inner-border-radius));
     }
+
     > .dropdown-item:last-child,
     > li:last-child .dropdown-item {
       @include border-bottom-radius(var(--#{$prefix}dropdown-inner-border-radius));
     }
-
   }
 }
 
@@ -136,6 +141,7 @@
 
   .dropdown-toggle {
     @include caret(end);
+
     &::after {
       vertical-align: 0;
     }
@@ -153,12 +159,12 @@
 
   .dropdown-toggle {
     @include caret(start);
+
     &::before {
       vertical-align: 0;
     }
   }
 }
-
 
 // Dividers (basically an `<hr>`) within the dropdown
 .dropdown-divider {
@@ -189,6 +195,7 @@
   &:focus {
     color: var(--#{$prefix}dropdown-link-hover-color);
     text-decoration: if($link-hover-decoration == underline, none, null);
+
     @include gradient-bg(var(--#{$prefix}dropdown-link-hover-bg));
   }
 
@@ -196,6 +203,7 @@
   &:active {
     color: var(--#{$prefix}dropdown-link-active-color);
     text-decoration: none;
+
     @include gradient-bg(var(--#{$prefix}dropdown-link-active-bg));
   }
 
@@ -218,7 +226,9 @@
   display: block;
   padding: var(--#{$prefix}dropdown-header-padding-y) var(--#{$prefix}dropdown-header-padding-x);
   margin-bottom: 0; // for use with heading elements
+
   @include font-size($font-size-sm);
+
   color: var(--#{$prefix}dropdown-header-color);
   white-space: nowrap; // as with > li > a
 }

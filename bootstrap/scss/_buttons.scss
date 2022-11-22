@@ -7,7 +7,9 @@
   --#{$prefix}btn-padding-x: #{$btn-padding-x};
   --#{$prefix}btn-padding-y: #{$btn-padding-y};
   --#{$prefix}btn-font-family: #{$btn-font-family};
+
   @include rfs($btn-font-size, --#{$prefix}btn-font-size);
+
   --#{$prefix}btn-font-weight: #{$btn-font-weight};
   --#{$prefix}btn-line-height: #{$btn-line-height};
   --#{$prefix}btn-color: #{$body-color};
@@ -18,13 +20,15 @@
   --#{$prefix}btn-hover-border-color: transparent;
   --#{$prefix}btn-box-shadow: #{$btn-box-shadow};
   --#{$prefix}btn-disabled-opacity: #{$btn-disabled-opacity};
-  --#{$prefix}btn-focus-box-shadow: 0 0 0 #{$btn-focus-width} rgba(var(--#{$prefix}btn-focus-shadow-rgb), .5);
+  --#{$prefix}btn-focus-box-shadow: 0 0 0 #{$btn-focus-width} rgba(var(--#{$prefix}btn-focus-shadow-rgb), 0.5);
   // scss-docs-end btn-css-vars
 
   display: inline-block;
   padding: var(--#{$prefix}btn-padding-y) var(--#{$prefix}btn-padding-x);
   font-family: var(--#{$prefix}btn-font-family);
+
   @include font-size(var(--#{$prefix}btn-font-size));
+
   font-weight: var(--#{$prefix}btn-font-weight);
   line-height: var(--#{$prefix}btn-line-height);
   color: var(--#{$prefix}btn-color);
@@ -35,6 +39,7 @@
   cursor: if($enable-button-pointers, pointer, null);
   user-select: none;
   border: var(--#{$prefix}btn-border-width) solid var(--#{$prefix}btn-border-color);
+
   @include border-radius(var(--#{$prefix}btn-border-radius));
   @include gradient-bg(var(--#{$prefix}btn-bg));
   @include box-shadow(var(--#{$prefix}btn-box-shadow));
@@ -56,13 +61,17 @@
 
   &:focus-visible {
     color: var(--#{$prefix}btn-hover-color);
+
     @include gradient-bg(var(--#{$prefix}btn-hover-bg));
+
     border-color: var(--#{$prefix}btn-hover-border-color);
     outline: 0;
     // Avoid using mixin so we can pass custom focus shadow properly
     @if $enable-shadows {
       box-shadow: var(--#{$prefix}btn-box-shadow), var(--#{$prefix}btn-focus-box-shadow);
-    } @else {
+    }
+
+    @else {
       box-shadow: var(--#{$prefix}btn-focus-box-shadow);
     }
   }
@@ -73,7 +82,9 @@
     // Avoid using mixin so we can pass custom focus shadow properly
     @if $enable-shadows {
       box-shadow: var(--#{$prefix}btn-box-shadow), var(--#{$prefix}btn-focus-box-shadow);
-    } @else {
+    }
+
+    @else {
       box-shadow: var(--#{$prefix}btn-focus-box-shadow);
     }
   }
@@ -88,13 +99,16 @@
     // Remove CSS gradients if they're enabled
     background-image: if($enable-gradients, none, null);
     border-color: var(--#{$prefix}btn-active-border-color);
+
     @include box-shadow(var(--#{$prefix}btn-active-shadow));
 
     &:focus-visible {
       // Avoid using mixin so we can pass custom focus shadow properly
       @if $enable-shadows {
         box-shadow: var(--#{$prefix}btn-active-shadow), var(--#{$prefix}btn-focus-box-shadow);
-      } @else {
+      }
+
+      @else {
         box-shadow: var(--#{$prefix}btn-focus-box-shadow);
       }
     }
@@ -109,10 +123,10 @@
     background-image: if($enable-gradients, none, null);
     border-color: var(--#{$prefix}btn-disabled-border-color);
     opacity: var(--#{$prefix}btn-disabled-opacity);
+
     @include box-shadow(none);
   }
 }
-
 
 //
 // Alternate buttons
@@ -130,7 +144,9 @@
         $active-background: shade-color($value, $btn-active-bg-shade-amount),
         $active-border: shade-color($value, $btn-active-border-shade-amount)
       );
-    } @else if $color == "dark" {
+    }
+
+    @else if $color == "dark" {
       @include button-variant(
         $value,
         $value,
@@ -139,7 +155,9 @@
         $active-background: tint-color($value, $btn-active-bg-tint-amount),
         $active-border: tint-color($value, $btn-active-border-tint-amount)
       );
-    } @else {
+    }
+
+    @else {
       @include button-variant($value, $value);
     }
   }
@@ -151,7 +169,6 @@
   }
 }
 // scss-docs-end btn-variant-loops
-
 
 //
 // Link buttons
@@ -173,6 +190,7 @@
   --#{$prefix}btn-focus-shadow-rgb: #{to-rgb(mix(color-contrast($primary), $primary, 15%))};
 
   text-decoration: $link-decoration;
+
   @if $enable-gradients {
     background-image: none;
   }
@@ -192,7 +210,6 @@
 
   // No need for an active state here
 }
-
 
 //
 // Button Sizes

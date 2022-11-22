@@ -1,19 +1,19 @@
 const speakerMobile = [
-    {
-        Photo: '../images/madara.jpg',
-        alt: 'Madara_Uchiha',
-        Artist: 'Madara Uchiha',
-        Position: 'Legendary leader Uchiha Clan',
-        Resume: 'Madara Uchiha is a fictional manga and anime character in the Naruto series created by Masashi Kishimoto.',
-    },
-    {
-        Photo: '../images/muzan.jpeg',
-        alt: 'Muzan_Kibutsuji',
-        Artist: 'Muzan Kibutsuji',
-        Position: 'Father of all Demons',
-        Resume: 'Muzan Kibutsuji is a fictional manga and anime character in the Kimetsu no Yaiba series created by Koyoharu Gotoge.',
-    }
-]
+  {
+    Photo: '../images/madara.jpg',
+    alt: 'Madara_Uchiha',
+    Artist: 'Madara Uchiha',
+    Position: 'Legendary leader Uchiha Clan',
+    Resume: 'Madara Uchiha is a fictional manga and anime character in the Naruto series created by Masashi Kishimoto.',
+  },
+  {
+    Photo: '../images/muzan.jpeg',
+    alt: 'Muzan_Kibutsuji',
+    Artist: 'Muzan Kibutsuji',
+    Position: 'Father of all Demons',
+    Resume: 'Muzan Kibutsuji is a fictional manga and anime character in the Kimetsu no Yaiba series created by Koyoharu Gotoge.',
+  },
+];
 
 const speakers = document.querySelector('.speakers');
 speakers.innerHTML = '<h3>Featured Speakers</h3><div class=separator></div>';
@@ -31,5 +31,5 @@ speakers.appendChild(div2);
 const div3 = document.createElement('div');
 div3.classList.add('mobile');
 div3.classList.add('arrow');
-div3.innerHTML = `<p>MORE&nbsp;&nbsp;&nbsp;&nbsp<span>&#xfe40</span></p>`
+div3.innerHTML = '<p>MORE&nbsp;&nbsp;&nbsp;&nbsp<span>&#xfe40</span></p>';
 speakers.appendChild(div3);

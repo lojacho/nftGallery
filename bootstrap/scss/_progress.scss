@@ -11,7 +11,9 @@
 .progress {
   // scss-docs-start progress-css-vars
   --#{$prefix}progress-height: #{$progress-height};
+
   @include rfs($progress-font-size, --#{$prefix}progress-font-size);
+
   --#{$prefix}progress-bg: #{$progress-bg};
   --#{$prefix}progress-border-radius: #{$progress-border-radius};
   --#{$prefix}progress-box-shadow: #{$progress-box-shadow};
@@ -23,8 +25,11 @@
   display: flex;
   height: var(--#{$prefix}progress-height);
   overflow: hidden; // force rounded corners by cropping it
+
   @include font-size(var(--#{$prefix}progress-font-size));
+
   background-color: var(--#{$prefix}progress-bg);
+
   @include border-radius(var(--#{$prefix}progress-border-radius));
   @include box-shadow(var(--#{$prefix}progress-box-shadow));
 }
@@ -38,11 +43,13 @@
   text-align: center;
   white-space: nowrap;
   background-color: var(--#{$prefix}progress-bar-bg);
+
   @include transition(var(--#{$prefix}progress-bar-transition));
 }
 
 .progress-bar-striped {
   @include gradient-striped();
+
   background-size: var(--#{$prefix}progress-height) var(--#{$prefix}progress-height);
 }
 

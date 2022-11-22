@@ -1,4 +1,5 @@
 @import "mixins/banner";
+
 @include bsBanner(Grid);
 
 $include-column-box-sizing: true !default;
@@ -6,20 +7,15 @@ $include-column-box-sizing: true !default;
 @import "functions";
 @import "variables";
 @import "maps";
-
 @import "mixins/lists";
 @import "mixins/breakpoints";
 @import "mixins/container";
 @import "mixins/grid";
 @import "mixins/utilities";
-
 @import "vendor/rfs";
-
 @import "root";
-
 @import "containers";
 @import "grid";
-
 @import "utilities";
 // Only use the utilities we need
 // stylelint-disable-next-line scss/dollar-variable-default

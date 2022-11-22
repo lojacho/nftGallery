@@ -3,7 +3,7 @@
   min-height: 1em;
   vertical-align: middle;
   cursor: wait;
-  background-color: currentcolor;
+  background-color: currentColor;
   opacity: $placeholder-opacity-max;
 
   &.btn::before {
@@ -14,11 +14,11 @@
 
 // Sizing
 .placeholder-xs {
-  min-height: .6em;
+  min-height: 0.6em;
 }
 
 .placeholder-sm {
-  min-height: .8em;
+  min-height: 0.8em;
 }
 
 .placeholder-lg {

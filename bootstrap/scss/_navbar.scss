@@ -33,6 +33,7 @@
   align-items: center;
   justify-content: space-between; // space out brand from logo
   padding: var(--#{$prefix}navbar-padding-y) var(--#{$prefix}navbar-padding-x);
+
   @include gradient-bg();
 
   // Because flex properties aren't inherited, we need to redeclare these first
@@ -57,7 +58,6 @@
   }
 }
 
-
 // Navbar brand
 //
 // Used for brand, project, or site names.
@@ -66,7 +66,9 @@
   padding-top: var(--#{$prefix}navbar-brand-padding-y);
   padding-bottom: var(--#{$prefix}navbar-brand-padding-y);
   margin-right: var(--#{$prefix}navbar-brand-margin-end);
+
   @include font-size(var(--#{$prefix}navbar-brand-font-size));
+
   color: var(--#{$prefix}navbar-brand-color);
   text-decoration: if($link-decoration == none, null, none);
   white-space: nowrap;
@@ -78,7 +80,6 @@
   }
 }
 
-
 // Navbar nav
 //
 // Custom navbar navigation (doesn't require `.nav`, but does make use of `.nav-link`).
@@ -87,7 +88,9 @@
   // scss-docs-start navbar-nav-css-vars
   --#{$prefix}nav-link-padding-x: 0;
   --#{$prefix}nav-link-padding-y: #{$nav-link-padding-y};
+
   @include rfs($nav-link-font-size, --#{$prefix}nav-link-font-size);
+
   --#{$prefix}nav-link-font-weight: #{$nav-link-font-weight};
   --#{$prefix}nav-link-color: var(--#{$prefix}navbar-color);
   --#{$prefix}nav-link-hover-color: var(--#{$prefix}navbar-hover-color);
@@ -110,7 +113,6 @@
   }
 }
 
-
 // Navbar text
 //
 //
@@ -122,11 +124,10 @@
 
   a,
   a:hover,
-  a:focus  {
+  a:focus {
     color: var(--#{$prefix}navbar-active-color);
   }
 }
-
 
 // Responsive navbar
 //
@@ -147,11 +148,14 @@
 // Button for toggling the navbar when in its collapsed state
 .navbar-toggler {
   padding: var(--#{$prefix}navbar-toggler-padding-y) var(--#{$prefix}navbar-toggler-padding-x);
+
   @include font-size(var(--#{$prefix}navbar-toggler-font-size));
+
   line-height: 1;
   color: var(--#{$prefix}navbar-color);
   background-color: transparent; // remove default button style
   border: var(--#{$prefix}border-width) solid var(--#{$prefix}navbar-toggler-border-color); // remove default button style
+
   @include border-radius(var(--#{$prefix}navbar-toggler-border-radius));
   @include transition(var(--#{$prefix}navbar-toggler-transition));
 
@@ -235,6 +239,7 @@
           background-color: transparent !important;
           border: 0 !important;
           transform: none !important;
+
           @include box-shadow(none);
           @include transition(none);
           // stylelint-enable declaration-no-important

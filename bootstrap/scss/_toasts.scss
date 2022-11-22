@@ -5,7 +5,9 @@
   --#{$prefix}toast-padding-y: #{$toast-padding-y};
   --#{$prefix}toast-spacing: #{$toast-spacing};
   --#{$prefix}toast-max-width: #{$toast-max-width};
+
   @include rfs($toast-font-size, --#{$prefix}toast-font-size);
+
   --#{$prefix}toast-color: #{$toast-color};
   --#{$prefix}toast-bg: #{$toast-background-color};
   --#{$prefix}toast-border-width: #{$toast-border-width};
@@ -19,13 +21,16 @@
 
   width: var(--#{$prefix}toast-max-width);
   max-width: 100%;
+
   @include font-size(var(--#{$prefix}toast-font-size));
+
   color: var(--#{$prefix}toast-color);
   pointer-events: auto;
   background-color: var(--#{$prefix}toast-bg);
   background-clip: padding-box;
   border: var(--#{$prefix}toast-border-width) solid var(--#{$prefix}toast-border-color);
   box-shadow: var(--#{$prefix}toast-box-shadow);
+
   @include border-radius(var(--#{$prefix}toast-border-radius));
 
   &.showing {
@@ -59,10 +64,11 @@
   background-color: var(--#{$prefix}toast-header-bg);
   background-clip: padding-box;
   border-bottom: var(--#{$prefix}toast-border-width) solid var(--#{$prefix}toast-header-border-color);
+
   @include border-top-radius(calc(var(--#{$prefix}toast-border-radius) - var(--#{$prefix}toast-border-width)));
 
   .btn-close {
-    margin-right: calc(-.5 * var(--#{$prefix}toast-padding-x)); // stylelint-disable-line function-disallowed-list
+    margin-right: calc(-0.5 * var(--#{$prefix}toast-padding-x)); // stylelint-disable-line function-disallowed-list
     margin-left: var(--#{$prefix}toast-padding-x);
   }
 }

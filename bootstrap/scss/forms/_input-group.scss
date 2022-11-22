@@ -38,7 +38,6 @@
   }
 }
 
-
 // Textual addons
 //
 // Serves as a catch-all element for any text or radio/checkbox input you wish
@@ -48,7 +47,9 @@
   display: flex;
   align-items: center;
   padding: $input-group-addon-padding-y $input-group-addon-padding-x;
+
   @include font-size($input-font-size); // Match inputs
+
   font-weight: $input-group-addon-font-weight;
   line-height: $input-line-height;
   color: $input-group-addon-color;
@@ -56,9 +57,9 @@
   white-space: nowrap;
   background-color: $input-group-addon-bg;
   border: $input-border-width solid $input-group-addon-border-color;
+
   @include border-radius($input-border-radius);
 }
-
 
 // Sizing
 //
@@ -70,6 +71,7 @@
 .input-group-lg > .input-group-text,
 .input-group-lg > .btn {
   padding: $input-padding-y-lg $input-padding-x-lg;
+
   @include font-size($input-font-size-lg);
   @include border-radius($input-border-radius-lg);
 }
@@ -79,6 +81,7 @@
 .input-group-sm > .input-group-text,
 .input-group-sm > .btn {
   padding: $input-padding-y-sm $input-padding-x-sm;
+
   @include font-size($input-font-size-sm);
   @include border-radius($input-border-radius-sm);
 }
@@ -87,7 +90,6 @@
 .input-group-sm > .form-select {
   padding-right: $form-select-padding-x + $form-select-indicator-padding;
 }
-
 
 // Rounded corners
 //
@@ -116,12 +118,14 @@
   }
 
   $validation-messages: "";
+
   @each $state in map-keys($form-validation-states) {
     $validation-messages: $validation-messages + ":not(." + unquote($state) + "-tooltip)" + ":not(." + unquote($state) + "-feedback)";
   }
 
   > :not(:first-child):not(.dropdown-menu)#{$validation-messages} {
     margin-left: -$input-border-width;
+
     @include border-start-radius(0);
   }
 

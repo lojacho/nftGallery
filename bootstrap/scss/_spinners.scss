@@ -50,6 +50,7 @@
   0% {
     transform: scale(0);
   }
+
   50% {
     opacity: 1;
     transform: none;
@@ -66,7 +67,7 @@
   --#{$prefix}spinner-animation-name: spinner-grow;
   // scss-docs-end spinner-grow-css-vars
 
-  background-color: currentcolor;
+  background-color: currentColor;
   opacity: 0;
 }
 
