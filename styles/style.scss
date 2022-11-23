@@ -10,7 +10,7 @@ html {
   display: none;
 }
 
-.header {
+.header.bg-light.container-fluid {
   padding-top: 2rem;
   padding-left: 1rem;
   margin-bottom: -2rem;
@@ -56,217 +56,221 @@ html {
   }
 }
 
-.homeIntro {
-  padding-top: 6rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  padding-bottom: 5rem;
-
-  h2 {
+#home {
+  .homeIntro {
     padding-top: 3rem;
-    font-family: 'Lato', sans-serif;
-    font-weight: 400;
-    color: $red-brand;
-    font-size: 2rem;
-  }
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 5rem;
 
-  h1 {
-    font-family: 'Lato', sans-serif;
-    font-weight: 900;
-    color: $red-brand;
-    font-size: 5rem;
-    line-height: 5rem;
-  }
-
-  p {
-    font-family: 'Lato', sans-serif;
-    color: $black-brand;
-    font-weight: 400;
-    font-size: 1.5rem;
-    line-height: 2.5rem;
-  }
-
-  .border {
-    border: 0.5rem solid white !important;
-    padding: 1.5rem;
-  }
-
-  h3 {
-    font-family: 'Lato', sans-serif;
-    color: $black-brand;
-    font-weight: 700;
-    font-size: 2.5rem;
-    line-height: 3.5rem;
-  }
-}
-
-.programMain {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-
-  h2 {
-    font-family: 'Lato', sans-serif;
-    color: white;
-    text-align: center;
-    font-weight: 400;
-    font-size: 2rem;
-    margin-bottom: -1rem;
-  }
-
-  .separator {
-    width: 3rem;
-    border-top: 0.2rem solid $red-brand;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 1rem;
-  }
-
-  .programOptions {
-    display: flex;
-    background-color: rgba($color: $gray-brand, $alpha: 0.2);
-    align-items: center;
-    justify-content: space-between;
-    padding: 1.5rem 2.5rem;
-
-    .initial {
-      max-width: 4rem;
-      flex: 1;
-
-      img {
-        width: 100%;
-        height: auto;
-      }
-    }
-
-    .middle {
-      flex: 2;
+    h2 {
+      padding-top: 3rem;
       font-family: 'Lato', sans-serif;
+      font-weight: 400;
       color: $red-brand;
-      text-align: center;
-      font-weight: 700;
-      font-size: 1.7rem;
+      font-size: 2rem;
     }
 
-    .final {
-      flex: 3;
+    h1 {
+      font-family: 'Lato', sans-serif;
+      font-weight: 900;
+      color: $red-brand;
+      font-size: 5rem;
+      line-height: 5rem;
+    }
+
+    p {
+      font-family: 'Lato', sans-serif;
+      color: $black-brand;
+      font-weight: 400;
+      font-size: 1.5rem;
+      line-height: 2.5rem;
+    }
+
+    .border {
+      border: 0.5rem solid white !important;
+      padding: 1.5rem;
+    }
+
+    h3 {
+      font-family: 'Lato', sans-serif;
+      color: $black-brand;
+      font-weight: 700;
+      font-size: 2.5rem;
+      line-height: 3.5rem;
+    }
+  }
+
+  #programMain {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    h2 {
       font-family: 'Lato', sans-serif;
       color: white;
+      text-align: center;
       font-weight: 400;
-      font-size: 1.2rem;
-      line-height: 2rem;
+      font-size: 2rem;
+      margin-bottom: -1rem;
     }
-  }
 
-  .join {
-    display: flex;
-    margin-top: 3rem;
-
-    button {
+    .separator {
+      width: 3rem;
+      border-top: 0.2rem solid $red-brand;
       margin-left: auto;
       margin-right: auto;
-      background-color: $red-brand;
-      font-family: 'Lato', sans-serif;
-      font-size: 2rem;
-      padding: 2rem 4rem;
-      border-radius: 0%;
-    }
-  }
-}
-
-.speakers {
-  padding: 2rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-
-  h3 {
-    font-family: 'Lato', sans-serif;
-    color: $black-brand;
-    font-weight: 500;
-    font-size: 2rem;
-    line-height: 3rem;
-    text-align: center;
-  }
-
-  .separator {
-    width: 3rem;
-    border-top: 0.2rem solid $red-brand;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 3rem;
-  }
-
-  .mobile {
-    display: flex;
-    gap: 1.5rem;
-
-    .photo {
-      flex: 1;
-
-      img {
-        width: 100%;
-        height: 100%;
-      }
+      margin-bottom: 1rem;
     }
 
-    .content {
-      flex: 3;
+    .programOptions {
+      display: flex;
+      background-color: rgba($color: $gray-brand, $alpha: 0.2);
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.5rem 2.5rem;
+      .initial {
+        max-width: 4rem;
+        flex: 1;
 
-      h4 {
-        font-family: 'Lato', sans-serif;
-        color: $black-brand;
-        font-weight: bold;
-        font-size: 1.5rem;
-        line-height: 1.7rem;
+        img {
+          width: 100%;
+          height: auto;
+        }
       }
 
-      h5 {
+      .middle {
+        flex: 2;
         font-family: 'Lato', sans-serif;
         color: $red-brand;
-        font-size: 1.5rem;
-        line-height: 1.7rem;
+        text-align: center;
+        font-weight: 700;
+        font-size: 1.7rem;
       }
 
-      .separatorGray {
-        width: 2rem;
-        border-top: 0.2rem solid $gray-brand;
-        margin-bottom: 1rem;
-        margin-top: 1rem;
+      .final {
+        flex: 3;
+        font-family: 'Lato', sans-serif;
+        color: white;
+        font-weight: 400;
+        font-size: 1.2rem;
+        line-height: 2rem;
       }
+    }
+
+    .join {
+      display: flex;
+      margin-top: 3rem;
+
+      button {
+        margin-left: auto;
+        margin-right: auto;
+        background-color: $red-brand;
+        font-family: 'Lato', sans-serif;
+        font-size: 2rem;
+        padding: 2rem 4rem;
+        border-radius: 0%;
+      }
+    }
+  }
+
+  .speakers {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: white !important;
+
+    h3 {
+      font-family: 'Lato', sans-serif;
+      color: $black-brand;
+      font-weight: 500;
+      font-size: 2rem;
+      line-height: 3rem;
+      text-align: center;
+    }
+
+    .separator {
+      width: 3rem;
+      border-top: 0.2rem solid $red-brand;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 3rem;
+    }
+
+    .mobile {
+      display: flex;
+      gap: 1.5rem;
+
+      .photo {
+        flex: 1;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .content {
+        flex: 3;
+
+        h4 {
+          font-family: 'Lato', sans-serif;
+          color: $black-brand;
+          font-weight: bold;
+          font-size: 1.5rem;
+          line-height: 1.7rem;
+        }
+
+        h5 {
+          font-family: 'Lato', sans-serif;
+          color: $red-brand;
+          font-size: 1.5rem;
+          line-height: 1.7rem;
+        }
+
+        .separatorGray {
+          width: 2rem;
+          border-top: 0.2rem solid $gray-brand;
+          margin-bottom: 1rem;
+          margin-top: 1rem;
+        }
+
+        p {
+          font-family: 'Lato', sans-serif;
+          color: $black-brand;
+          font-size: 1.3rem;
+          line-height: 1.7rem;
+        }
+      }
+    }
+
+    .arrow {
+      margin-top: 3.5rem;
+      margin-bottom: 2rem;
+      border: 0.2rem solid $gray-brand;
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
 
       p {
+        display: flex;
+        justify-content: center;
         font-family: 'Lato', sans-serif;
         color: $black-brand;
         font-size: 1.3rem;
-        line-height: 1.7rem;
-      }
-    }
-  }
+        margin-bottom: 0;
 
-  .arrow {
-    margin-top: 3.5rem;
-    margin-bottom: 2rem;
-    border: 0.2rem solid $gray-brand;
-    padding: 1.5rem;
-    display: flex;
-    flex-direction: column;
-
-    p {
-      display: flex;
-      justify-content: center;
-      font-family: 'Lato', sans-serif;
-      color: $black-brand;
-      font-size: 1.3rem;
-      margin-bottom: 0;
-
-      span {
-        display: block;
-        color: $red-brand;
-        font-weight: bolder;
-        margin-top: 0.4rem;
+        span {
+          display: block;
+          color: $red-brand;
+          font-weight: bolder;
+          margin-top: 0.4rem;
+        }
       }
     }
   }
@@ -436,7 +440,7 @@ html {
 }
 
 .partner {
-  padding: 2rem;
+  padding: 2rem !important;
   display: flex;
   flex-direction: column;
 
@@ -469,7 +473,7 @@ html {
 }
 
 .footeres {
-  padding: 3rem;
+  padding: 3rem !important;
 
   .row {
     .col {
@@ -517,10 +521,10 @@ html {
     }
   }
 
-  .header {
+  .header.bg-light.container-fluid {
     padding-left: 8rem;
     padding-right: 8rem;
-    background-color: white;
+    background-color: white !important;
     padding-top: 1rem;
     padding-bottom: 1rem;
 
