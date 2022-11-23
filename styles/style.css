@@ -6,6 +6,10 @@ html {
   display: none;
 }
 
+.mediaDesktopAbout {
+  display: none;
+}
+
 .header.bg-light.container-fluid {
   padding-top: 2rem;
   padding-left: 1rem;
@@ -664,6 +668,61 @@ html {
     font-weight: 400;
     font-size: 1rem;
     line-height: 1.5rem;
+  }
+  .mediaDesktopAbout {
+    display: flex;
+    padding: 0.5rem 3rem 0.5rem 9rem;
+  }
+  .mediaDesktopAbout ul {
+    list-style: none;
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
+    align-items: center;
+    margin-bottom: 0;
+  }
+  .mediaDesktopAbout ul .narrow {
+    margin-right: -1.5rem;
+  }
+  .mediaDesktopAbout ul li {
+    font-family: "Lato", sans-serif;
+    color: white;
+    font-weight: 400;
+    font-size: 1rem;
+  }
+  .mediaDesktopAbout ul li img {
+    width: 1.5rem;
+    height: auto;
+  }
+  .navBarAbout {
+    padding-left: 12rem !important;
+    padding-right: 3rem !important;
+    background-color: white !important;
+  }
+  #about .aboutIntro {
+    padding-right: 8rem;
+    padding-left: 15rem;
+    padding-top: 8rem;
+  }
+  #about .aboutIntro h3 {
+    display: none;
+  }
+  #about .creative {
+    padding-right: 8rem;
+    padding-left: 15rem;
+  }
+  #about .creative .logo {
+    width: 40%;
+  }
+  #about .summit {
+    padding-right: 8rem;
+    padding-left: 15rem;
+    padding-bottom: 4rem;
+  }
+  #about .summit .containerPast {
+    display: flex;
+    gap: 2rem;
   }
 }
 
