@@ -17,7 +17,7 @@ const speakerMobile = [
     Photo: '../images/dante.jpeg',
     alt: 'Dante_Zogratis',
     Artist: 'Dante Zogratis',
-    Position:'Member of Dark Triad',
+    Position: 'Member of Dark Triad',
     Resume: 'Dante Zogratis is a fictional manga and anime character in the Black Clover series created by Yuki Tabata.',
   },
   {
@@ -46,7 +46,7 @@ const speakerMobile = [
 const speakers = document.querySelector('.speakers');
 speakers.innerHTML = '<h3>Featured Speakers</h3><div class=separator></div>';
 
-const divContainer=document.createElement('div');
+const divContainer = document.createElement('div');
 divContainer.classList.add('containerSpeakers');
 speakers.appendChild(divContainer);
 
