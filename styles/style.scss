@@ -1,6 +1,7 @@
 $black-brand: #272a31;
 $red-brand: #ec5242;
 $gray-brand: #d3d3d3;
+$gray-bg: rgb(248, 249, 250);
 
 html {
   font-size: 62.5%;
@@ -507,6 +508,14 @@ html {
       display: none;
     }
   }
+
+  .partnerHome {
+    display: none;
+  }
+
+  .footeresHome {
+    display: none;
+  }
 }
 
 @media (min-width: 768px) {
@@ -650,6 +659,9 @@ html {
     }
 
     .speakers {
+      background-color: $gray-bg !important;
+      padding-left: 0;
+      padding-right: 0;
 
       .containerSpeakers {
         display: grid;
@@ -730,6 +742,62 @@ html {
 
       .arrow {
         display: none;
+      }
+    }
+
+    .partnerHome {
+      padding: 2rem 10rem 4rem 10rem !important;
+      display: flex;
+      flex-direction: column;
+    
+      h3 {
+        text-align: center;
+        font-family: 'Lato', sans-serif;
+        color: $gray-brand;
+        font-weight: 400;
+        font-size: 2rem;
+        line-height: 2.5rem;
+        margin-bottom: 1.5rem;
+      }
+    
+      .separator {
+        width: 3rem;
+        border-top: 0.2rem solid $red-brand;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 1.5rem;
+      }
+    
+      .row {
+        .col {
+          img {
+            width: 100%;
+            height: 80%;
+          }
+        }
+      }
+    }
+    
+    .footeresHome {
+      display: flex;
+      padding: 6rem 8rem !important;
+      background-color: $gray-bg;
+    
+      .row {
+        .col {
+          img {
+            width: 80%;
+            height: auto;
+          }
+    
+          p {
+            font-family: 'Lato', sans-serif;
+            color: $black-brand;
+            font-weight: 400;
+            font-size: 1rem;
+            line-height: 1.5rem;
+          }
+        }
       }
     }
   }
