@@ -718,11 +718,44 @@ html {
   #about .summit {
     padding-right: 8rem;
     padding-left: 15rem;
-    padding-bottom: 4rem;
+    padding-bottom: 8rem;
   }
   #about .summit .containerPast {
     display: flex;
     gap: 2rem;
+  }
+  #about .summit .containerPast .past1 {
+    width: 100%;
+    margin: 0;
+  }
+  #about .summit .containerPast .past1 img {
+    width: 100%;
+  }
+  #about .summit .containerPast .past2 {
+    width: 100%;
+    margin: 0;
+  }
+  #about .summit .containerPast .past2 img {
+    width: 100%;
+  }
+  #about .partner {
+    display: none;
+  }
+  #about .footeres {
+    padding: 6rem 6rem 6rem 13rem !important;
+    background-color: rgb(33, 37, 41);
+  }
+  #about .footeres .row .col img {
+    width: 100%;
+    height: auto;
+  }
+  #about .footeres .row .col p {
+    padding-left: 2rem;
+    font-family: "Lato", sans-serif;
+    color: white;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 }
 

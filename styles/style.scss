@@ -2,6 +2,7 @@ $black-brand: #272a31;
 $red-brand: #ec5242;
 $gray-brand: #d3d3d3;
 $gray-bg: rgb(248, 249, 250);
+$black-bg: rgb(33, 37, 41);
 
 html {
   font-size: 62.5%;
@@ -864,11 +865,55 @@ html {
     .summit {
       padding-right: 8rem;
       padding-left: 15rem;
-      padding-bottom: 4rem;
+      padding-bottom: 8rem;
 
       .containerPast {
         display: flex;
         gap: 2rem;
+
+        .past1 {
+          width: 100%;
+          margin: 0;
+
+          img {
+            width: 100%;
+          }
+        }
+      
+        .past2 {
+          width: 100%;
+          margin: 0;
+
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    .partner {
+      display: none;
+    }
+
+    .footeres {
+      padding: 6rem 6rem 6rem 13rem !important;
+      background-color: $black-bg;
+      .row {
+        .col {
+          img {
+            width: 100%;
+            height: auto;
+          }
+    
+          p {
+            padding-left: 2rem;
+            font-family: 'Lato', sans-serif;
+            color: white;
+            font-weight: 400;
+            font-size: 1rem;
+            line-height: 1.5rem;
+          }
+        }
       }
     }
   }
