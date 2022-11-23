@@ -468,6 +468,32 @@ html {
     width: 1rem;
     height: auto;
   }
+  .mediaDesktopAbout {
+    display: flex;
+    padding: 0.5rem 3rem 0.5rem 9rem;
+  }
+  .mediaDesktopAbout ul {
+    list-style: none;
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
+    align-items: center;
+    margin-bottom: 0;
+  }
+  .mediaDesktopAbout ul .narrow {
+    margin-right: -1.5rem;
+  }
+  .mediaDesktopAbout ul li {
+    font-family: "Lato", sans-serif;
+    color: white;
+    font-weight: 400;
+    font-size: 1rem;
+  }
+  .mediaDesktopAbout ul li img {
+    width: 1.5rem;
+    height: auto;
+  }
   .header.bg-light.container-fluid {
     padding-left: 8rem;
     padding-right: 8rem;
@@ -513,8 +539,90 @@ html {
   .header.bg-light.container-fluid .toolbar .toolbarMobile {
     display: none;
   }
+  #about .aboutIntro {
+    padding-right: 8rem;
+    padding-left: 15rem;
+    padding-top: 8rem;
+  }
+  #about .aboutIntro h3 {
+    display: none;
+  }
+  #about .creative {
+    padding-right: 8rem;
+    padding-left: 15rem;
+  }
+  #about .creative .logo {
+    width: 40%;
+  }
+  #about .summit {
+    padding-right: 8rem;
+    padding-left: 15rem;
+    padding-bottom: 8rem;
+  }
+  #about .summit .containerPast {
+    display: flex;
+    gap: 2rem;
+  }
+  #about .summit .containerPast .past1 {
+    width: 100%;
+    margin: 0;
+  }
+  #about .summit .containerPast .past1 img {
+    width: 100%;
+  }
+  #about .summit .containerPast .past2 {
+    width: 100%;
+    margin: 0;
+  }
+  #about .summit .containerPast .past2 img {
+    width: 100%;
+  }
+  #about .partner {
+    display: none;
+  }
+  #about .footeres {
+    padding: 6rem 6rem 6rem 13rem !important;
+    background-color: rgb(33, 37, 41);
+  }
+  #about .footeres .row .col img {
+    width: 100%;
+    height: auto;
+  }
+  #about .footeres .row .col p {
+    padding-left: 2rem;
+    font-family: "Lato", sans-serif;
+    color: white;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
   #home .homeIntro {
     padding: 4rem 8rem;
+  }
+  #home .partnerHome {
+    padding: 2rem 10rem 4rem 10rem !important;
+    display: flex;
+    flex-direction: column;
+  }
+  #home .partnerHome h3 {
+    text-align: center;
+    font-family: "Lato", sans-serif;
+    color: #d3d3d3;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+  #home .partnerHome .separator {
+    width: 3rem;
+    border-top: 0.2rem solid #ec5242;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.5rem;
+  }
+  #home .partnerHome .row .col img {
+    width: 100%;
+    height: 80%;
   }
   #home #programMain {
     padding-left: 0;
@@ -559,6 +667,22 @@ html {
   }
   #home #programMain .linkDesktop a {
     color: white;
+  }
+  #home .footeresHome {
+    display: flex;
+    padding: 6rem 8rem !important;
+    background-color: rgb(248, 249, 250);
+  }
+  #home .footeresHome .row .col img {
+    width: 80%;
+    height: auto;
+  }
+  #home .footeresHome .row .col p {
+    font-family: "Lato", sans-serif;
+    color: #272a31;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
   #home .speakers {
     background-color: rgb(248, 249, 250) !important;
@@ -628,134 +752,10 @@ html {
   #home .speakers .arrow {
     display: none;
   }
-  #home .partnerHome {
-    padding: 2rem 10rem 4rem 10rem !important;
-    display: flex;
-    flex-direction: column;
-  }
-  #home .partnerHome h3 {
-    text-align: center;
-    font-family: "Lato", sans-serif;
-    color: #d3d3d3;
-    font-weight: 400;
-    font-size: 2rem;
-    line-height: 2.5rem;
-    margin-bottom: 1.5rem;
-  }
-  #home .partnerHome .separator {
-    width: 3rem;
-    border-top: 0.2rem solid #ec5242;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 1.5rem;
-  }
-  #home .partnerHome .row .col img {
-    width: 100%;
-    height: 80%;
-  }
-  #home .footeresHome {
-    display: flex;
-    padding: 6rem 8rem !important;
-    background-color: rgb(248, 249, 250);
-  }
-  #home .footeresHome .row .col img {
-    width: 80%;
-    height: auto;
-  }
-  #home .footeresHome .row .col p {
-    font-family: "Lato", sans-serif;
-    color: #272a31;
-    font-weight: 400;
-    font-size: 1rem;
-    line-height: 1.5rem;
-  }
-  .mediaDesktopAbout {
-    display: flex;
-    padding: 0.5rem 3rem 0.5rem 9rem;
-  }
-  .mediaDesktopAbout ul {
-    list-style: none;
-    flex: 1;
-    display: flex;
-    justify-content: flex-end;
-    gap: 2rem;
-    align-items: center;
-    margin-bottom: 0;
-  }
-  .mediaDesktopAbout ul .narrow {
-    margin-right: -1.5rem;
-  }
-  .mediaDesktopAbout ul li {
-    font-family: "Lato", sans-serif;
-    color: white;
-    font-weight: 400;
-    font-size: 1rem;
-  }
-  .mediaDesktopAbout ul li img {
-    width: 1.5rem;
-    height: auto;
-  }
   .navBarAbout {
     padding-left: 12rem !important;
     padding-right: 3rem !important;
     background-color: white !important;
-  }
-  #about .aboutIntro {
-    padding-right: 8rem;
-    padding-left: 15rem;
-    padding-top: 8rem;
-  }
-  #about .aboutIntro h3 {
-    display: none;
-  }
-  #about .creative {
-    padding-right: 8rem;
-    padding-left: 15rem;
-  }
-  #about .creative .logo {
-    width: 40%;
-  }
-  #about .summit {
-    padding-right: 8rem;
-    padding-left: 15rem;
-    padding-bottom: 8rem;
-  }
-  #about .summit .containerPast {
-    display: flex;
-    gap: 2rem;
-  }
-  #about .summit .containerPast .past1 {
-    width: 100%;
-    margin: 0;
-  }
-  #about .summit .containerPast .past1 img {
-    width: 100%;
-  }
-  #about .summit .containerPast .past2 {
-    width: 100%;
-    margin: 0;
-  }
-  #about .summit .containerPast .past2 img {
-    width: 100%;
-  }
-  #about .partner {
-    display: none;
-  }
-  #about .footeres {
-    padding: 6rem 6rem 6rem 13rem !important;
-    background-color: rgb(33, 37, 41);
-  }
-  #about .footeres .row .col img {
-    width: 100%;
-    height: auto;
-  }
-  #about .footeres .row .col p {
-    padding-left: 2rem;
-    font-family: "Lato", sans-serif;
-    color: white;
-    font-weight: 400;
-    font-size: 1rem;
-    line-height: 1.5rem;
   }
 }
 

@@ -374,7 +374,6 @@ html {
     }
 
     .containerSpeakers {
-
       display: flex;
       flex-direction: column;
       gap: 1rem;
@@ -551,6 +550,37 @@ html {
     }
   }
 
+  .mediaDesktopAbout {
+    display: flex;
+    padding: 0.5rem 3rem 0.5rem 9rem;
+
+    ul {
+      list-style: none;
+      flex: 1;
+      display: flex;
+      justify-content: flex-end;
+      gap: 2rem;
+      align-items: center;
+      margin-bottom: 0;
+
+      .narrow {
+        margin-right: -1.5rem;
+      }
+
+      li {
+        font-family: 'Lato', sans-serif;
+        color: white;
+        font-weight: 400;
+        font-size: 1rem;
+
+        img {
+          width: 1.5rem;
+          height: auto;
+        }
+      }
+    }
+  }
+
   .header.bg-light.container-fluid {
     padding-left: 8rem;
     padding-right: 8rem;
@@ -604,9 +634,119 @@ html {
     }
   }
 
+  #about {
+    .aboutIntro {
+      padding-right: 8rem;
+      padding-left: 15rem;
+      padding-top: 8rem;
+
+      h3 {
+        display: none;
+      }
+    }
+
+    .creative {
+      padding-right: 8rem;
+      padding-left: 15rem;
+
+      .logo {
+        width: 40%;
+      }
+    }
+
+    .summit {
+      padding-right: 8rem;
+      padding-left: 15rem;
+      padding-bottom: 8rem;
+
+      .containerPast {
+        display: flex;
+        gap: 2rem;
+
+        .past1 {
+          width: 100%;
+          margin: 0;
+
+          img {
+            width: 100%;
+          }
+        }
+
+        .past2 {
+          width: 100%;
+          margin: 0;
+
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    .partner {
+      display: none;
+    }
+
+    .footeres {
+      padding: 6rem 6rem 6rem 13rem !important;
+      background-color: $black-bg;
+
+      .row {
+        .col {
+          img {
+            width: 100%;
+            height: auto;
+          }
+
+          p {
+            padding-left: 2rem;
+            font-family: 'Lato', sans-serif;
+            color: white;
+            font-weight: 400;
+            font-size: 1rem;
+            line-height: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+
   #home {
     .homeIntro {
       padding: 4rem 8rem;
+    }
+
+    .partnerHome {
+      padding: 2rem 10rem 4rem 10rem !important;
+      display: flex;
+      flex-direction: column;
+
+      h3 {
+        text-align: center;
+        font-family: 'Lato', sans-serif;
+        color: $gray-brand;
+        font-weight: 400;
+        font-size: 2rem;
+        line-height: 2.5rem;
+        margin-bottom: 1.5rem;
+      }
+
+      .separator {
+        width: 3rem;
+        border-top: 0.2rem solid $red-brand;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 1.5rem;
+      }
+
+      .row {
+        .col {
+          img {
+            width: 100%;
+            height: 80%;
+          }
+        }
+      }
     }
 
     #programMain {
@@ -658,7 +798,29 @@ html {
 
         a {
           color: white;
+        }
+      }
+    }
 
+    .footeresHome {
+      display: flex;
+      padding: 6rem 8rem !important;
+      background-color: $gray-bg;
+
+      .row {
+        .col {
+          img {
+            width: 80%;
+            height: auto;
+          }
+
+          p {
+            font-family: 'Lato', sans-serif;
+            color: $black-brand;
+            font-weight: 400;
+            font-size: 1rem;
+            line-height: 1.5rem;
+          }
         }
       }
     }
@@ -677,7 +839,6 @@ html {
         padding-right: 8rem;
 
         .mobile {
-
           .photo {
             flex: 1.8;
           }
@@ -688,7 +849,7 @@ html {
             h5 {
               font-size: 1rem;
             }
-            
+
             p {
               font-size: 1rem;
               line-height: 1.4rem;
@@ -742,96 +903,10 @@ html {
             }
           }
         }
-
       }
 
       .arrow {
         display: none;
-      }
-    }
-
-    .partnerHome {
-      padding: 2rem 10rem 4rem 10rem !important;
-      display: flex;
-      flex-direction: column;
-    
-      h3 {
-        text-align: center;
-        font-family: 'Lato', sans-serif;
-        color: $gray-brand;
-        font-weight: 400;
-        font-size: 2rem;
-        line-height: 2.5rem;
-        margin-bottom: 1.5rem;
-      }
-    
-      .separator {
-        width: 3rem;
-        border-top: 0.2rem solid $red-brand;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 1.5rem;
-      }
-    
-      .row {
-        .col {
-          img {
-            width: 100%;
-            height: 80%;
-          }
-        }
-      }
-    }
-    
-    .footeresHome {
-      display: flex;
-      padding: 6rem 8rem !important;
-      background-color: $gray-bg;
-    
-      .row {
-        .col {
-          img {
-            width: 80%;
-            height: auto;
-          }
-    
-          p {
-            font-family: 'Lato', sans-serif;
-            color: $black-brand;
-            font-weight: 400;
-            font-size: 1rem;
-            line-height: 1.5rem;
-          }
-        }
-      }
-    }
-  }
-  .mediaDesktopAbout {
-    display: flex;
-    padding: 0.5rem 3rem 0.5rem 9rem;
-
-    ul {
-      list-style: none;
-      flex: 1;
-      display: flex;
-      justify-content: flex-end;
-      gap: 2rem;
-      align-items: center;
-      margin-bottom: 0;
-
-      .narrow {
-        margin-right: -1.5rem;
-      }
-      li {
-        font-family: 'Lato', sans-serif;
-        color: white;
-        font-weight: 400;
-        font-size: 1rem;
-
-        img {
-          width: 1.5rem;
-          height: auto;
-        }
       }
     }
   }
@@ -840,81 +915,5 @@ html {
     padding-left: 12rem !important;
     padding-right: 3rem !important;
     background-color: white !important;
-  }
-
-  #about {
-
-    .aboutIntro {
-      padding-right: 8rem;
-      padding-left: 15rem;
-      padding-top: 8rem;
-      h3 {
-        display: none;
-      }
-    }
-
-    .creative {
-      padding-right: 8rem;
-      padding-left: 15rem;
-
-      .logo {
-        width: 40%;
-      }
-    }
-
-    .summit {
-      padding-right: 8rem;
-      padding-left: 15rem;
-      padding-bottom: 8rem;
-
-      .containerPast {
-        display: flex;
-        gap: 2rem;
-
-        .past1 {
-          width: 100%;
-          margin: 0;
-
-          img {
-            width: 100%;
-          }
-        }
-      
-        .past2 {
-          width: 100%;
-          margin: 0;
-
-          img {
-            width: 100%;
-          }
-        }
-      }
-    }
-
-    .partner {
-      display: none;
-    }
-
-    .footeres {
-      padding: 6rem 6rem 6rem 13rem !important;
-      background-color: $black-bg;
-      .row {
-        .col {
-          img {
-            width: 100%;
-            height: auto;
-          }
-    
-          p {
-            padding-left: 2rem;
-            font-family: 'Lato', sans-serif;
-            color: white;
-            font-weight: 400;
-            font-size: 1rem;
-            line-height: 1.5rem;
-          }
-        }
-      }
-    }
   }
 }
