@@ -171,7 +171,7 @@ Feel free to check the [issues page](https://github.com/dgcuenca/nftGallery/issu
 
 > Write a message to encourage readers to support your project
 
-If you like this project please give me a start. 
+If you like this project please give me a star. 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
