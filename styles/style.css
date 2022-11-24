@@ -172,28 +172,54 @@ html {
   padding-right: 2rem;
 }
 .summit .past1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 85%;
-  height: auto;
+  height: 18rem;
   margin-left: auto;
   margin-right: auto;
   margin-top: 2rem;
   margin-bottom: 1rem;
+  background: linear-gradient(0deg, rgba(236, 82, 66, 0.8), rgba(236, 82, 66, 0.8)), url(../backgrounds/past1.jpeg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
-.summit .past1 img {
-  width: 100%;
-  height: auto;
+.summit .past1 p {
+  color: white;
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  font-size: 4rem;
+  line-height: 4rem;
+}
+.summit .past1 p span {
+  font-size: 1.5rem;
+  font-weight: 500;
 }
 .summit .past2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 85%;
-  height: auto;
+  height: 18rem;
   margin-left: auto;
   margin-right: auto;
   margin-top: 1rem;
   margin-bottom: 3rem;
+  background: linear-gradient(0deg, rgba(236, 82, 66, 0.8), rgba(236, 82, 66, 0.8)), url(../backgrounds/past2.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
-.summit .past2 img {
-  width: 100%;
-  height: auto;
+.summit .past2 p {
+  color: white;
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  font-size: 4rem;
+  line-height: 4rem;
+}
+.summit .past2 p span {
+  font-size: 1.5rem;
+  font-weight: 500;
 }
 
 .partner {
@@ -572,15 +598,9 @@ html {
     width: 100%;
     margin: 0;
   }
-  #about .summit .containerPast .past1 img {
-    width: 100%;
-  }
   #about .summit .containerPast .past2 {
     width: 100%;
     margin: 0;
-  }
-  #about .summit .containerPast .past2 img {
-    width: 100%;
   }
   #about .partner {
     display: none;
