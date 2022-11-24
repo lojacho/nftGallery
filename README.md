@@ -110,24 +110,6 @@ Clone this repository to your desired folder:
 - Type git clone, and then paste the URL you copied earlier.
 - Press Enter to create your local clone.
 
-### Install
-
-Install this project with:
-
-- Not applicable. 
-
-### Usage
-
-To run the project, execute the following command:
-
-- Not applicable.
-
-### Run tests
-
-To run tests, run the following command:
-
-- Not applicable.
-
 ### Deployment
 
 You can deploy this project using:
@@ -181,7 +163,8 @@ If you like this project please give me a star.
 
 > Give credit to everyone who inspired your codebase.
 
-I would like to thank all my microverse classmates. 
+- [Cindy Shin](https://www.behance.net/adagio07)
+- I would like to thank all my microverse classmates. 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
