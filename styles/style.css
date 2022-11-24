@@ -251,9 +251,25 @@ html {
 .footeres {
   padding: 3rem !important;
 }
-.footeres .row .col img {
-  width: 80%;
-  height: auto;
+.footeres .row .col {
+  display: flex;
+  align-items: center;
+}
+.footeres .row .col .mobileF {
+  padding-top: 0.2rem;
+  width: 2rem;
+  height: 2rem;
+}
+.footeres .row .col .deskF {
+  display: none;
+}
+.footeres .row .col div {
+  margin-left: 0.1rem;
+  font-family: "Lato", sans-serif;
+  color: #272a31;
+  font-weight: 700;
+  font-size: 1.7rem;
+  line-height: 1.1rem;
 }
 .footeres .row .col p {
   font-family: "Lato", sans-serif;
@@ -261,6 +277,7 @@ html {
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.5rem;
+  margin-bottom: 0;
 }
 
 #home .homeIntro {
@@ -609,9 +626,21 @@ html {
     padding: 6rem 6rem 6rem 13rem !important;
     background-color: rgb(33, 37, 41);
   }
-  #about .footeres .row .col img {
-    width: 100%;
-    height: auto;
+  #about .footeres .row .col .mobileF {
+    display: none;
+  }
+  #about .footeres .row .col .deskF {
+    display: inline;
+    width: 2rem;
+    height: 2rem;
+  }
+  #about .footeres .row .col div {
+    margin-left: 0.1rem;
+    font-family: "Lato", sans-serif;
+    color: white;
+    font-weight: 700;
+    font-size: 1.7rem;
+    line-height: 1.1rem;
   }
   #about .footeres .row .col p {
     padding-left: 2rem;
@@ -699,9 +728,22 @@ html {
     padding: 6rem 8rem !important;
     background-color: rgb(248, 249, 250);
   }
+  #home .footeresHome .row .col {
+    display: flex;
+    align-items: center;
+  }
   #home .footeresHome .row .col img {
-    width: 80%;
-    height: auto;
+    padding-top: 0.2rem;
+    width: 2rem;
+    height: 2rem;
+  }
+  #home .footeresHome .row .col div {
+    margin-left: 0.1rem;
+    font-family: "Lato", sans-serif;
+    color: #272a31;
+    font-weight: 700;
+    font-size: 1.7rem;
+    line-height: 1.1rem;
   }
   #home .footeresHome .row .col p {
     font-family: "Lato", sans-serif;

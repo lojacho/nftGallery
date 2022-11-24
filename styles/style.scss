@@ -207,7 +207,7 @@ html {
     margin-top: 2rem;
     margin-bottom: 1rem;
     // background-image: url(../backgrounds/past1.jpeg);
-    background:linear-gradient(0deg, rgba(236, 82, 66, 0.8), rgba(236, 82, 66, 0.8)), url(../backgrounds/past1.jpeg);
+    background: linear-gradient(0deg, rgba(236, 82, 66, 0.8), rgba(236, 82, 66, 0.8)), url(../backgrounds/past1.jpeg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
 
@@ -217,7 +217,7 @@ html {
       font-weight: 500;
       font-size: 4rem;
       line-height: 4rem;
-      
+
       span {
         font-size: 1.5rem;
         font-weight: 500;
@@ -235,7 +235,7 @@ html {
     margin-right: auto;
     margin-top: 1rem;
     margin-bottom: 3rem;
-    background:linear-gradient(0deg, rgba(236, 82, 66, 0.8), rgba(236, 82, 66, 0.8)), url(../backgrounds/past2.jpg);
+    background: linear-gradient(0deg, rgba(236, 82, 66, 0.8), rgba(236, 82, 66, 0.8)), url(../backgrounds/past2.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
 
@@ -245,7 +245,7 @@ html {
       font-weight: 500;
       font-size: 4rem;
       line-height: 4rem;
-      
+
       span {
         font-size: 1.5rem;
         font-weight: 500;
@@ -292,9 +292,26 @@ html {
 
   .row {
     .col {
-      img {
-        width: 80%;
-        height: auto;
+      display: flex;
+      align-items: center;
+
+      .mobileF {
+        padding-top: 0.2rem;
+        width: 2rem;
+        height: 2rem;
+      }
+
+      .deskF {
+        display: none;
+      }
+
+      div {
+        margin-left: 0.1rem;
+        font-family: 'Lato', sans-serif;
+        color: $black-brand;
+        font-weight: 700;
+        font-size: 1.7rem;
+        line-height: 1.1rem;
       }
 
       p {
@@ -303,6 +320,7 @@ html {
         font-weight: 400;
         font-size: 1rem;
         line-height: 1.5rem;
+        margin-bottom: 0;
       }
     }
   }
@@ -720,9 +738,23 @@ html {
 
       .row {
         .col {
-          img {
-            width: 100%;
-            height: auto;
+          .mobileF {
+            display: none;
+          }
+
+          .deskF {
+            display: inline;
+            width: 2rem;
+            height: 2rem;
+          }
+
+          div {
+            margin-left: 0.1rem;
+            font-family: 'Lato', sans-serif;
+            color: white;
+            font-weight: 700;
+            font-size: 1.7rem;
+            line-height: 1.1rem;
           }
 
           p {
@@ -837,9 +869,22 @@ html {
 
       .row {
         .col {
+          display: flex;
+          align-items: center;
+
           img {
-            width: 80%;
-            height: auto;
+            padding-top: 0.2rem;
+            width: 2rem;
+            height: 2rem;
+          }
+
+          div {
+            margin-left: 0.1rem;
+            font-family: 'Lato', sans-serif;
+            color: $black-brand;
+            font-weight: 700;
+            font-size: 1.7rem;
+            line-height: 1.1rem;
           }
 
           p {
