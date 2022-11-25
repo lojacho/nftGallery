@@ -11,15 +11,21 @@ html {
 }
 
 .header.bg-light.container-fluid {
-  padding-top: 2rem;
+  padding-top: 0 !important;
   padding-left: 1rem;
   margin-bottom: -2rem;
+  padding-bottom: 0 !important;
 }
 .header.bg-light.container-fluid .toolbar {
   list-style: none;
+  margin-bottom: 0;
 }
 .header.bg-light.container-fluid .toolbar .toolbarDesktop {
   display: none;
+}
+.header.bg-light.container-fluid .toolbar .toolbarMobile #hamburgerIcon {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 .header.bg-light.container-fluid .toolbar .toolbarMobile .noShow {
   display: none;
@@ -51,10 +57,17 @@ html {
 }
 
 .aboutIntro {
+  background: linear-gradient(270deg, rgb(240, 238, 238), rgba(243, 236, 235, 0.7)), url(../backgrounds/tanjiroFlames.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 2rem;
   padding-left: 2rem;
   padding-right: 2rem;
   padding-bottom: 3rem;
   padding-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .aboutIntro h3 {
   padding-top: 3rem;
@@ -88,8 +101,9 @@ html {
 }
 .aboutIntro .border {
   margin-bottom: 2rem;
-  background-color: white;
+  background-color: rgba(248, 249, 250, 0.5);
   padding: 1.5rem;
+  max-width: 60rem;
 }
 
 .creative {
@@ -281,6 +295,9 @@ html {
 }
 
 #home .homeIntro {
+  margin-top: 2rem;
+  background: linear-gradient(270deg, rgb(240, 238, 238), rgba(243, 236, 235, 0.7)), url(../backgrounds/tanjiroFlames.jpeg);
+  background-size: cover;
   padding-top: 3rem;
   padding-left: 2rem;
   padding-right: 2rem;
@@ -310,6 +327,7 @@ html {
 #home .homeIntro .border {
   border: 0.5rem solid white !important;
   padding: 1.5rem;
+  max-width: 60rem;
 }
 #home .homeIntro h3 {
   font-family: "Lato", sans-serif;
@@ -373,12 +391,19 @@ html {
 }
 #home .speakers .containerSpeakers .mobile .photo {
   flex: 1;
+  background-image: url("../borders/chesborder.jpg");
+  background-position: top left;
+  background-size: 50% 50%;
+  background-repeat: no-repeat;
 }
 #home .speakers .containerSpeakers .mobile .photo img {
   width: 100%;
   aspect-ratio: 1/1;
+  padding-top: 15%;
+  padding-left: 15%;
 }
 #home .speakers .containerSpeakers .mobile .content {
+  padding-top: 4%;
   flex: 3;
 }
 #home .speakers .containerSpeakers .mobile .content h4 {
@@ -417,6 +442,9 @@ html {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  background: linear-gradient(0deg, rgba(48, 47, 47, 0.9), rgba(105, 105, 104, 0.9)), url(../backgrounds/cursor.png);
+  background-size: 0.5rem;
+  background-repeat: repeat;
 }
 #home #programMain h2 {
   font-family: "Lato", sans-serif;
@@ -767,9 +795,14 @@ html {
   }
   #home .speakers .containerSpeakers .mobile .photo {
     flex: 1.8;
+    background-image: url("../borders/chesborder.jpg");
+    background-position: top left;
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
   }
   #home .speakers .containerSpeakers .mobile .content {
     flex: 2;
+    padding-top: 7%;
   }
   #home .speakers .containerSpeakers .mobile .content h5 {
     font-size: 1rem;
@@ -784,13 +817,20 @@ html {
   }
   #home .speakers .containerSpeakers .desktop .photo {
     flex: 1.8;
+    background-image: url("../borders/chesborder.jpg");
+    background-position: top left;
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
   }
   #home .speakers .containerSpeakers .desktop .photo img {
     width: 100%;
     aspect-ratio: 1/1;
+    padding-top: 15%;
+    padding-left: 15%;
   }
   #home .speakers .containerSpeakers .desktop .content {
     flex: 2;
+    padding-top: 7%;
   }
   #home .speakers .containerSpeakers .desktop .content h4 {
     font-family: "Lato", sans-serif;
@@ -824,6 +864,8 @@ html {
     padding-left: 12rem !important;
     padding-right: 3rem !important;
     background-color: white !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
   }
 }
 

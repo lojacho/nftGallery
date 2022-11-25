@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,700&display=swap"
         rel="stylesheet">
     <script src="./scripts/hamburger.js" defer></script>
@@ -15,38 +16,41 @@
 </head>
 
 <body>
-    <header class="bg-dark container-flui mediaDesktop">
-        <ul>
-            <li><img src="./logos/facebook.png" alt="Facebook Logo"></li>
-            <li><img src="./logos/twitter.png" alt="Twitter Logo"></li>
-            <li>English</li>
-            <li>My Page</li>
-            <li>Logout</li>
-        </ul>
+    <header>
+        <section class="bg-dark container-flui mediaDesktop">
+            <ul>
+                <li><img src="./logos/facebook.png" alt="Facebook Logo"></li>
+                <li><img src="./logos/twitter.png" alt="Twitter Logo"></li>
+                <li>English</li>
+                <li>My Page</li>
+                <li>Logout</li>
+            </ul>
+        </section>
+        <section class="header bg-light container-fluid">
+            <ul class="toolbar">
+                <li class="toolbarDesktop">
+                    <a href="./index.html"><img src="./logos/Global_Summit_2015.png" alt="Logo"></a>
+                </li>
+                <li class="toolbarDesktop pushright"><a href="./about.html">About</a></li>
+                <li class="toolbarDesktop">Program</li>
+                <li class="toolbarDesktop">Join</li>
+                <li class="toolbarDesktop">Sponsor</li>
+                <li class="toolbarDesktop">News</li>
+                <li class="toolbarDesktop square">CC Campaign</li>
+                <li class="toolbarMobile">
+                    <nav>
+                        <img id="hamburgerIcon" src="./icons/hamburger.png" alt="iconMenu">
+                        <div id="hamburgerDropdownContent" class="noShow">
+                            <a href="#"><img src="./icons/close.png" alt="Close hamburger"></a>
+                            <a href="./index.html">Home</a>
+                            <a href="./about.html">About</a>
+                        </div>
+                    </nav>
+                </li>
+            </ul>
+        </section>
     </header>
-    <header class="header bg-light container-fluid">
-        <ul class="toolbar">
-            <li class="toolbarDesktop">
-                <a href="./index.html"><img src="./logos/Global_Summit_2015.png" alt="Logo"></a>
-            </li>
-            <li class="toolbarDesktop pushright"><a href="./about.html">About</a></li>
-            <li class="toolbarDesktop">Program</li>
-            <li class="toolbarDesktop">Join</li>
-            <li class="toolbarDesktop">Sponsor</li>
-            <li class="toolbarDesktop">News</li>
-            <li class="toolbarDesktop square">CC Campaign</li>
-            <li class="toolbarMobile mobileIconmenu">
-                <nav>
-                    <img id="hamburgerIcon" src="./icons/hamburger.png" alt="iconMenu">
-                    <div id="hamburgerDropdownContent" class="noShow">
-                        <a href="#"><img src="./icons/close.png" alt="Close hamburger"></a>
-                        <a href="./index.html">Home</a>
-                        <a href="./about.html">About</a>
-                    </div>
-                </nav>
-            </li>
-        </ul>
-    </header>
+
     <section class="homePage" id="home">
         <div class="container-fluid bg-light homeIntro">
             <h2>"Welcome to NFT exhibition"</h2>
@@ -62,70 +66,77 @@
                 <div class=" container-fluid programOptions">
                     <div class="initial"><img src="./icons/lecture.png" alt="Lecture Icon"></div>
                     <p class="middle">Lecture</p>
-                    <p class="final">Listen to the speakers from various countries about the messeges of sahrin and opening.
+                    <p class="final">Listen to the speakers from various countries about the messeges of sahrin and
+                        opening.
                     </p>
                 </div>
                 <div class=" container-fluid programOptions">
                     <div class="initial"><img src="./icons/exhibition.png" alt="Exhibition Icon"></div>
                     <p class="middle">NFT Exhibition</p>
-                    <p class="final">Listen to the speakers from various countries about the messeges of sahrin and opening.
+                    <p class="final">Listen to the speakers from various countries about the messeges of sahrin and
+                        opening.
                     </p>
                 </div>
                 <div class=" container-fluid programOptions">
                     <div class="initial"><img src="./icons/chat.png" alt="Forum Icon"></div>
                     <p class="middle">Forum</p>
-                    <p class="final">Listen to the speakers from various countries about the messeges of sahrin and opening.
+                    <p class="final">Listen to the speakers from various countries about the messeges of sahrin and
+                        opening.
                     </p>
                 </div>
                 <div class=" container-fluid programOptions">
                     <div class="initial"><img src="./icons/workshop.png" alt="Workshop Icon"></div>
                     <p class="middle">Workshop</p>
-                    <p class="final">Listen to the speakers from various countries about the messeges of sahrin and opening.
+                    <p class="final">Listen to the speakers from various countries about the messeges of sahrin and
+                        opening.
                     </p>
                 </div>
                 <div class=" container-fluid programOptions">
                     <div class="initial"><img src="./icons/insight.png" alt="Insight Icon"></div>
                     <p class="middle">Insight</p>
-                    <p class="final">Listen to the speakers from various countries about the messeges of sahrin and opening.
+                    <p class="final">Listen to the speakers from various countries about the messeges of sahrin and
+                        opening.
                     </p>
                 </div>
             </div>
             <div class="join"><button type="button" class="btn btn-danger">Join NFT Art Gallery</button></div>
             <div class="linkDesktop"><a href="#">SEE THE WHOLE PROGRAM</a> </div>
         </div>
-        <div class="container-fluid bg-light speakers">   
+        <div class="container-fluid bg-light speakers">
         </div>
         <div class="container-fluid bg-dark partnerHome">
             <h3>Partner</h3>
             <div class="separator"></div>
             <div class="row">
                 <div class="col">
-                  <img src="./logos/firefox.jpeg" alt="Mozilla firefox">
+                    <img src="./logos/firefox.jpeg" alt="Mozilla firefox">
                 </div>
                 <div class="col">
-                  <img src="./logos/google.jpg" alt="Google">
+                    <img src="./logos/google.jpg" alt="Google">
                 </div>
                 <div class="col">
-                  <img src="./logos/naver.png" alt="Naver">
+                    <img src="./logos/naver.png" alt="Naver">
                 </div>
                 <div class="col">
-                  <img src="./logos/daum.png" alt="Daumkakao">
+                    <img src="./logos/daum.png" alt="Daumkakao">
                 </div>
                 <div class="col">
-                  <img src="./logos/airbnb.png" alt="AirBnb">
+                    <img src="./logos/airbnb.png" alt="AirBnb">
                 </div>
-            </div>     
+            </div>
         </div>
         <div class="container-fluid footeresHome">
             <div class="row">
                 <div class="col">
-                    <img src="./logos/ccBlack.png" alt="Creative Commons"><div>creative</br>commons korea</div> 
-                  </div>
-                <div class="col">
-                  <p>2015 Creative Commons Korea Some Rights Reserved</p>
+                    <img src="./logos/ccBlack.png" alt="Creative Commons">
+                    <div>creative</br>commons korea</div>
                 </div>
-            </div>     
+                <div class="col">
+                    <p>2015 Creative Commons Korea Some Rights Reserved</p>
+                </div>
+            </div>
         </div>
     </section>
 </body>
+
 </html>
