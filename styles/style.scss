@@ -513,8 +513,7 @@ html {
     flex-direction: column;
     gap: 1rem;
     background: linear-gradient(0deg, rgba(48, 47, 47, 0.9), rgba(105, 105, 104, 0.9)), url(../backgrounds/cursor.png);
-
-    background-size: 0.5rem;
+    background-size: 2rem;
     background-repeat: repeat;
 
     h2 {
@@ -988,7 +987,7 @@ html {
           .content {
             flex: 2;
             padding-top: 7%;
-            
+
             h4 {
               font-family: 'Lato', sans-serif;
               color: $black-brand;
