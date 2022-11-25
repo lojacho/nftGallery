@@ -511,7 +511,7 @@ html {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    background: linear-gradient(0deg, rgba(48, 47, 47, 0.9), rgba(105, 105, 104, 0.9)), url(../backgrounds/cursor.png);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(../backgrounds/cursor.png);
     background-size: 2rem;
     background-repeat: repeat;
 
@@ -839,8 +839,8 @@ html {
     #programMain {
       padding-left: 0;
       padding-right: 0;
-      background: linear-gradient(0deg, rgba(48, 47, 47, 0.9), rgba(105, 105, 104, 0.9)), url(../backgrounds/cursor.png);
-      background-size: 4rem;
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(../backgrounds/cursor.png);
+      background-size: 2.5rem;
       background-repeat: repeat;
 
       .separator {
