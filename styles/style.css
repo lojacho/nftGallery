@@ -709,6 +709,9 @@ html {
   #home #programMain {
     padding-left: 0;
     padding-right: 0;
+    background: linear-gradient(0deg, rgba(48, 47, 47, 0.9), rgba(105, 105, 104, 0.9)), url(../backgrounds/cursor.png);
+    background-size: 4rem;
+    background-repeat: repeat;
   }
   #home #programMain .separator {
     margin-top: 1rem;
